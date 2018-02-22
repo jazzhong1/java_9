@@ -1,6 +1,38 @@
 package com.iu.s4;
 
-public class Point {		//final이 있을경우 상속하지마라 
+public class Point {
+	
+	int x=10;
+	
+	public void info() {
+		System.out.println(x);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*//final이 있을경우 상속하지마라 
 							//
 	
 	
@@ -30,5 +62,5 @@ public class Point {		//final이 있을경우 상속하지마라
 	
 	public final void m3(){
 		
-	}
+	}*/
 }
