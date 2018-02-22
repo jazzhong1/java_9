@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="test/|test_2/|test_3/|test_4/final_method/|test_4/interitance/|test_4/overriding/|test_4/parent_constructor_call/|test_4/protected_package_1/|test_4/protected_package_2/|test_4/superr/|test_4/casting/|test_4/method_polymorpyism/|test_4/promotion/|polymorphism_array/|test_4/field_polymorphism/|test_4/instanceof_1/|test_4/abstract_class/|test_4/abstract_method/|test_4/|test_5/interface_1/|test_5/interface_2/|test_5/|test_1/|work/|test_7/runtime_exception/|test_8/object_clone/Thin_Clone_main.java|test_8/object_clone/Thin_Clone_Member.java|java_exception/|java_inheritance/|java_interface/|java_nested_anonymous/|java_basic_api/java_lang_Object_clone/Thin_Clone_main.java|java_basic_api/java_lang_Object_clone/Thin_Clone_Member.java|java_variable_type/|java_class/|java_basic_api/" kind="src" path="src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
