@@ -5,7 +5,6 @@ public class InBody {
 	void check(Member members){
 		System.out.println("비만도 측정");
 		String result = null;
-		Member member = null;
 		
 			
 			/*
