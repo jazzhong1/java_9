@@ -1,4 +1,4 @@
-package com.iu.s4;
+package com.iu.s5;
 
 public class Main {
 	public static void main(String[] args) {

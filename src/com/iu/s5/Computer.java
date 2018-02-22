@@ -1,4 +1,4 @@
-package com.iu.s4;
+package com.iu.s5;
 
 public class Computer extends Product{
 	private String cpu;

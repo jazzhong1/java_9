@@ -1,4 +1,4 @@
-package com.iu.s4;
+package com.iu.s5;
 
 public class Tv extends Product {
 	private int size;
