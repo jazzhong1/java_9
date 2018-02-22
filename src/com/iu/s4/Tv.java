@@ -2,7 +2,7 @@ package com.iu.s4;
 
 public class Tv extends Product {
 	private int size;
-	private String brind;
+	private String brand;
 	
 	
 	public int getSize() {
@@ -12,10 +12,10 @@ public class Tv extends Product {
 		this.size = size;
 	}
 	public String getBrind() {
-		return brind;
+		return brand;
 	}
 	public void setBrind(String brind) {
-		this.brind = brind;
+		this.brand = brind;
 	}
 
 }
