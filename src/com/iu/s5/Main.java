@@ -3,6 +3,8 @@ package com.iu.s5;
 public class Main {
 	public static void main(String[] args) {
 		
+		Product product=new Product();
+		
 		Tv t= new Tv();
 		t.setBrind("LG");
 		t.setSize(100);
@@ -25,7 +27,7 @@ public class Main {
 		iu.setDon(2000);
 		iu.setPoint(0);
 		
-		iu.buy(computer);
+		iu.buy(product=computer);
 		
 		
 		

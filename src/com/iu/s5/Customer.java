@@ -67,5 +67,18 @@ public class Customer {
 		System.out.println("현재 포인트:" + point);
 
 	}
+	
+	public void buy(Product product) {
+		// 물건값 계산
+		// 포인트 계산
+		
+		this.don = this.don - product.getPrice();
+		this.point = this.point + product.getPoint();
+		System.out.println("현재 남은 돈:" + don);
+		System.out.println("현재 포인트:" + point);
+
+	}
+	
+	
 
 }
