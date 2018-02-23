@@ -27,9 +27,12 @@ public class Main {
 		iu.setDon(2000);
 		iu.setPoint(0);
 		
-		iu.buy(product=computer);
-		
-		
+		Product[] products=new Product[3];
+			products[0]=computer;	
+			products[1]=phone;			
+			products[2]=t;
+			
+			iu.buy(products);
 		
 	}
 }
