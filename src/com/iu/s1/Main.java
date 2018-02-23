@@ -1,6 +1,5 @@
 package com.iu.s1;
 
-import java.util.*;
 
 public class Main {
 	

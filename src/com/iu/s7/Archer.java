@@ -1,9 +1,11 @@
 package com.iu.s7;
 
-public class Archer extends Kind {
+public class Archer extends Kind implements Attack  {
 
-	void attack() {
+	@Override
+	public void attack() {
 		System.out.println("원거리공격");
 	}
+	
 
 }

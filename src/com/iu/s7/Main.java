@@ -6,13 +6,12 @@ public class Main {
 		Archer archer=new Archer();
 		Magician magician=new Magician();
 		Warrior warrior=new Warrior();
+		
 		Npc npc=new Npc();
 		
 		archer.attack();
 		magician.attack();
 		warrior.attack();
 		
-		
 	}
-
 }
