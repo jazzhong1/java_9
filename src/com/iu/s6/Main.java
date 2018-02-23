@@ -7,7 +7,11 @@ public class Main {
 									//실수로라도 만들지 못하게 해야한다. 
 									//Animal은 포괄적이기때문에
 									//상속받아서 사용해라 
+		Fly fly=new Tazo();
+		
+		fly=new AirPlane();
+		
+		
 		
 	}
-
 }

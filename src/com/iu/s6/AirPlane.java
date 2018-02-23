@@ -1,6 +1,6 @@
 package com.iu.s6;
 
-public class AirPlane implements Fly {	//,로 
+public class AirPlane implements Fly,Test{	//,로 
 
 	// Fly에 있는 추상메서드를 가져와야만 오류발생이 없다.
 
