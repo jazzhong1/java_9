@@ -55,13 +55,16 @@ public class Customer {
 			Computer computer = (Computer) product;
 			System.out.println(computer.getCpu());
 			System.out.println(computer.getWeight());
-		} else if (product instanceof Tv) {
+		} 
+		
+		else if (product instanceof Tv) {
 			Tv tv = (Tv) product;
 			System.out.println(tv.getBrind());
 			System.out.println(tv.getSize());
-		} else if (product instanceof Phone) {
+		} 
+		
+		else if (product instanceof Phone) {
 			Phone phone = (Phone) product;
-
 			System.out.println(phone.getBrand());
 			System.out.println(phone.getColor());
 		}
