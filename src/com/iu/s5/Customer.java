@@ -5,64 +5,70 @@ public class Customer {
 	private int don;
 	private int point;
 
+	Computer computer;
+	Tv tv;
+	Phone phone;
+
 	public int getDon() {
 		return don;
 	}
+
 	public void setDon(int don) {
 		this.don = don;
 	}
+
 	public int getPoint() {
 		return point;
 	}
+
 	public void setPoint(int point) {
 		this.point = point;
 	}
-	
-	public void buy(int price, int point){
-		this.don=this.don-price;
-		this.point=this.point-point;
 
-		System.out.println("현재 남은 돈:" + don);
-		System.out.println("현재 포인트:" + point);
-	}
-	
+	// 물건을 여러개 계산 메서드
+	//
 
-	
-
-	public void buy(Computer computer) {
+	public void buy(Product[] products) {
 		// 물건값 계산
 		// 포인트 계산
-		this.don = this.don - computer.getPrice();
-		this.point = this.point + computer.getPoint();
+
+		for (int i = 0; i < products.length; i++) {
+
+			this.don = this.don - products[i].getPrice();
+			this.point = this.point + products[i].getPoint();
+			System.out.println("현재 남은 돈:" + don);
+			System.out.println("현재 포인트:" + point);
+		}
+	}
+
+	public void buy(Product product) {
+		// 물건값 계산
+		// 포인트 계산
+
+		this.don = this.don - product.getPrice();
+		this.point = this.point + product.getPoint();
+		// instnaceof=연산자 boolean리턴
+		// 해당 참조변수가 어떤 클래스타입인지 판별
+		// web, 프레임워크가면 알아서 형변환 해준다
+
+		if (product instanceof Computer) {
+			Computer computer = (Computer) product;
+			System.out.println(computer.getCpu());
+			System.out.println(computer.getWeight());
+		} 
 		
-		System.out.println("cpu:"+computer.getCpu());
-		System.out.println("무게"+computer.getWeight());
-		System.out.println("현재 남은 돈:" + don);
-		System.out.println("현재 포인트:" + point);
-
-	}
-
-	public void buy(Phone phone) {
-		// 물건값 계산
-		// 포인트 계산
-		this.don = this.don - phone.getPrice();
-		this.point = this.point + phone.getPoint();
-
-		System.out.println("색상:"+phone.getColor());
-		System.out.println("브랜드:"+phone.getBrand());
-		System.out.println("현재 남은 돈:" + don);
-		System.out.println("현재 포인트:" + point);
-
-	}
-
-	public void buy(Tv tv) {
-		// 물건값 계산
-		// 포인트 계산
+		else if (product instanceof Tv) {
+			Tv tv = (Tv) product;
+			System.out.println(tv.getBrind());
+			System.out.println(tv.getSize());
+		} 
 		
-		this.don = this.don - tv.getPrice();
-		this.point = this.point + tv.getPoint();
-		System.out.println("브랜드:"+tv.getBrind());
-		System.out.println("사이즈:"+tv.getSize());
+		else if (product instanceof Phone) {
+			Phone phone = (Phone) product;
+			System.out.println(phone.getBrand());
+			System.out.println(phone.getColor());
+		}
+
 		System.out.println("현재 남은 돈:" + don);
 		System.out.println("현재 포인트:" + point);
 
